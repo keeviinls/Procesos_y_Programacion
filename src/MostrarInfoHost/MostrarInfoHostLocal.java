@@ -12,6 +12,14 @@ public class MostrarInfoHostLocal {
 
             //Mostrar la direccion IP del host
             System.out.println("Direccion IP del host: "+localhost.getHostAddress());
+
+            // Mostrar getCanonicalHostName
+            System.out.println("getCanonicalHostName nos devuelve : "+localhost.getCanonicalHostName());
+
+            // Mostrar getAdress()
+            System.out.println("getAddress nos devuelve : "+localhost.getAddress());
+
+
         }catch (UnknownHostException e){
             e.printStackTrace();
         }
